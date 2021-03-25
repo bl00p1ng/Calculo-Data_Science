@@ -64,4 +64,35 @@ No se puede asignar a dos elementos del conjunto *x* el mismo elemento del conju
 
   **ℹ Nota:** se pueden ejecutar todas las celdas de un Notebook en Colab con *Ctrl + F9*
 
+  ### Clase 5. Dominio y rango de una función
+
+  #### Dominio
+
+  Son los valores que toma **x** y están definidos en la función **f(x)**. En otras palabras son los valores que puede recibir la función, todos los valores de **x** que puede recibir la función y que respetan la regla impuesta en la función.
+
+  #### Rango
+
+  Son todos los resultados que puede dar una función.
+
   
+
+  Si se ejemplificaran los conceptos anteriores con una máquina que prepara café:
+
+  ![](https://i.ibb.co/bP8NtSX/ejemplo-dominio-rango.png)
+
+  Del tipo de grano de café que se ingrese a la máquina (dominio) depende el tipo de café que preparará la máquina (rango). De la misma manera la máquina sólo puede recibir café como ingrediente, si se ingresa algo diferente esta se puede estropear, esto ejemplifica el concepto de los valores posibles de **x** que cumplen con la regla definida en la función.
+
+  
+
+  ![](https://i.ibb.co/9svcPmM/funcion-dominio-recorrido.webp)
+
+  
+
+  #### Algunos conceptos extra:
+
+  **Dominio, codominio y rango**
+  Hay nombres especiales para lo que puede entrar, y también lo que puede salir de una función:
+
+  - Lo que puede entrar en una función se llama el dominio
+  - Lo que es posible que salga de una función se llama el codominio
+  - Lo que en realidad sale de una función se llama rango o imagen
