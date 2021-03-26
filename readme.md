@@ -13,6 +13,7 @@
     - [Clase 6. Cómo programar funciones algebraicas](#clase-6-cómo-programar-funciones-algebraicas)
       - [Funciones Algebraicas](#funciones-algebraicas)
     - [Clase 7. Cómo programar funciones trascendentes](#clase-7-cómo-programar-funciones-trascendentes)
+    - [Clase 8. ¿Cómo manipular funciones?](#clase-8-cómo-manipular-funciones)
 
 ## 📚 Módulo 1. Introducción
 
@@ -149,9 +150,18 @@ Toda función que se puede definir con una serie de polinomios o una relación d
 
 ### Clase 7. Cómo programar funciones trascendentes
 
-A diferencia de las funciones algebraicas las funciones trascendentes no se pueden definir con una serie se polinomios. Algunos ejemplos de este tipo de funciones son las *funciones trigonométricas*, las *funciones exponenciales*, las *funciones logaritmicas* y las *funciones seccionadas*.
+A diferencia de las funciones algebraicas las funciones trascendentes no se pueden definir con una serie se polinomios. Algunos ejemplos de este tipo de funciones son las *funciones trigonométricas*, las *funciones exponenciales*, las *funciones logarítmicas* y las *funciones seccionadas*.
 
 ```python
 np.zeros(len(X))
 ```
 Crear una que va contener la cantidad de ceros que se le pasen por parámetro.
+
+
+### Clase 8. ¿Cómo manipular funciones?
+
+Alterar los parámetros de entrada para mover la función a la derecha, a la izquierda, subirla, bajarla, hacerle una reflexión, alargarla o comprimirla.
+
+Estas movimientos son muy útiles pues en ocasiones hay operaciones en las que se necesitan normalizar datos, meterlos en un rango que por ejemplo vaya de -1 a 1 (estas 2 cosas son muy comunes en Data Science).
+
+Gracias a esto se puede partir de una función conocida, hacerle diferentes manipulaciones y al final dar con una función que explique como se modelan determinados datos.
