@@ -12,6 +12,7 @@
       - [Algunos conceptos extra:](#algunos-conceptos-extra)
     - [Clase 6. Cómo programar funciones algebraicas](#clase-6-cómo-programar-funciones-algebraicas)
       - [Funciones Algebraicas](#funciones-algebraicas)
+    - [Clase 7. Cómo programar funciones trascendentes](#clase-7-cómo-programar-funciones-trascendentes)
 
 ## 📚 Módulo 1. Introducción
 
@@ -145,3 +146,12 @@ Toda función que se puede definir con una serie de polinomios o una relación d
 
     Son un caso especial de las funciones polinómicas.
   
+
+### Clase 7. Cómo programar funciones trascendentes
+
+A diferencia de las funciones algebraicas las funciones trascendentes no se pueden definir con una serie se polinomios. Algunos ejemplos de este tipo de funciones son las *funciones trigonométricas*, las *funciones exponenciales*, las *funciones logaritmicas* y las *funciones seccionadas*.
+
+```python
+np.zeros(len(X))
+```
+Crear una que va contener la cantidad de ceros que se le pasen por parámetro.
