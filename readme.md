@@ -15,6 +15,7 @@
     - [Clase 7. Cómo programar funciones trascendentes](#clase-7-cómo-programar-funciones-trascendentes)
     - [Clase 8. ¿Cómo manipular funciones?](#clase-8-cómo-manipular-funciones)
     - [Clase 9. Funciones dentro de otras funciones](#clase-9-funciones-dentro-de-otras-funciones)
+    - [Clase 10. Características de las funciones](#clase-10-características-de-las-funciones)
 
 ## 📚 Módulo 1. Introducción
 
@@ -187,3 +188,78 @@ La **Composición** es en esencia ese proceso en el que se pasa una variable a u
 La composición se puede representar de las siguientes maneras.
 
 ![](https://i.ibb.co/d0W25bg/definicion-composicion.png)
+
+
+### Clase 10. Características de las funciones
+
+**Funciones Reales**
+
+Se llaman así porque tanto su dominio como el codominio (rango o imagen) están contenidos dentro del conjunto de los números reales, es decir el conjunto que contiene a los números racionales e irracionales. En otras palabras cualquier número que se te ocurra que no sea imaginario.
+
+**Características de las funciones Reales**
+- **Función par**
+  
+  Una función es par si cumple con la siguiente relación a lo largo de su dominio:
+
+  ![](https://i.ibb.co/0C1Cj8x/regla-funcion-par.png)
+
+  Esta relación dice que una función es par si es simétrica al eje vertical (eje Y). Por ejemplo, una parábola es una función es par.
+
+- **Función impar**
+  Una función es impar si cumple la siguiente relación a lo largo de su dominio:
+
+  ![](https://i.ibb.co/QHC7nmL/regla-funcion-impar.png)
+
+  Esta relación indica que una función es impar si es simétrica al eje horizontal (eje X). Por ejemplo, una función cúbica es impar.
+
+- **Función acotada**
+  
+  Una función es acotada si su codominio (también conocido como rango o imagen) se encuentra entre dos valores, es decir, está acotado. Esta definición se define como que hay un número m que para todo valor del dominio de la función se cumple que:
+
+  ![](https://i.ibb.co/zxvF2bW/regla-funcion-acotada.png)
+
+  Por ejemplo, la función seno o coseno están acotadas en el intervalo [-1, 1] dentro de su co-dominio.
+
+- **Funciones monótonas**
+
+  Estas funciones son útiles de reconocer o analizar debido a que nos permiten saber si una función crece o decrece en alguno de sus intervalos. Que algo sea monótono significa que no tiene variaciones. Entonces las funciones monótonas son aquellas que dentro de un intervalo I, perteneciente a los números reales, cumple alguna de estas propiedades:
+
+  - **La función es monótona y estrictamente creciente:**
+  
+  ![](https://i.ibb.co/hKsphH0/funcion-monotona-estrictamente-creciente.png)
+
+  Si para todo x1 y x2 que pertenecen al intervalo I, tal que x1 sea menor a x2, si y solo si f(x1) sea menor a f(x2)”. En palabras mucho más sencillas, lo que nos dice esta definición es que x1 siempre tiene que ser menor que x2 en nuestro intervalo I, y que al evaluar x2 en la función el resultado de esto siempre será mayor que si evaluamos la función en x1. Para las siguientes tres definiciones restantes no cambia mucho la forma en la que se interpretan.
+
+  - **La función es monótona y estrictamente decreciente:**
+  
+  ![](https://i.ibb.co/xDkxNxW/funcion-monotona-estrictamente-decreciente.png)
+
+  - **La función es monótona y creciente:**
+
+    ![](https://i.ibb.co/SBKPfL3/funcion-monotona-creciente.png)
+
+  - **La función es monótona y decreciente:**
+    
+    ![](https://i.ibb.co/LpKQXz4/funcion-monotona-decreciente.png)
+
+- **Funciones periódicas**
+
+  Las funciones periódicas son aquellas que se repiten cada cierto periodo, este periodo se denomina con la letra T. La relación que debe cumplir la función para ser periódica es la siguiente.
+
+  ![](https://i.ibb.co/3myHvJG/funciones-periodicas.png)
+
+  Por ejemplo, la función seno y coseno son funciones periódicas con un periodo T = 2π. Es decir que si nosotros calculamos f(x) y calculamos f(x + 2π) en la función seno el valor que nos den ambas expresiones es el mismo.
+
+- **Funciones cóncavas y convexas**
+
+  La forma de demostrar la concavidad de una función se puede hacer a través del análisis de derivadas consecutivas (a través del análisis de la segunda derivada), no obstante hay un método más intuitivo que consiste en analizar la gráfica de la función.
+
+  Se dice que una función dentro de un intervalo es cóncava si la función “abre hacia arriba”. Es decir si se ve la siguiente manera:
+
+  ![](https://i.ibb.co/r6Sp2mc/funcion-concava.png)
+
+  Ahora, ¿qué sería una función convexa? Pues así es, lo contrario de una cóncava. Se dice que una función dentro de un intervalo es convexa si la función “abre hacia abajo”. Es decir si se ve la siguiente manera:
+
+  ![](https://i.ibb.co/zVNWtkv/funcion-convexa.png)
+
+
