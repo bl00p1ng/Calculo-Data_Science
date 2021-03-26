@@ -14,6 +14,7 @@
       - [Funciones Algebraicas](#funciones-algebraicas)
     - [Clase 7. Cómo programar funciones trascendentes](#clase-7-cómo-programar-funciones-trascendentes)
     - [Clase 8. ¿Cómo manipular funciones?](#clase-8-cómo-manipular-funciones)
+    - [Clase 9. Funciones dentro de otras funciones](#clase-9-funciones-dentro-de-otras-funciones)
 
 ## 📚 Módulo 1. Introducción
 
@@ -155,7 +156,7 @@ A diferencia de las funciones algebraicas las funciones trascendentes no se pued
 ```python
 np.zeros(len(X))
 ```
-Crear una que va contener la cantidad de ceros que se le pasen por parámetro.
+Crea una lista que va contener la cantidad de ceros que se le pasen por parámetro.
 
 
 ### Clase 8. ¿Cómo manipular funciones?
@@ -165,3 +166,24 @@ Alterar los parámetros de entrada para mover la función a la derecha, a la izq
 Estas movimientos son muy útiles pues en ocasiones hay operaciones en las que se necesitan normalizar datos, meterlos en un rango que por ejemplo vaya de -1 a 1 (estas 2 cosas son muy comunes en Data Science).
 
 Gracias a esto se puede partir de una función conocida, hacerle diferentes manipulaciones y al final dar con una función que explique como se modelan determinados datos.
+
+
+### Clase 9. Funciones dentro de otras funciones
+
+Composición = funciones dentro de otras funciones
+
+**Explicación con un ejemplo:**
+
+Se quiere hacer una máquina que sea capaz de hacer pasteles. La máquina funciona en 2 etapas, en la primera se elige el sabor y se crea el pan que sirve de base para el pastel, en la segunda se toma la base que se crea en el primer paso y se le agrega una cobertura y la decoración. 
+
+![](https://i.ibb.co/JFrrM3N/proceso-pastel.png)
+
+La composición funciona de la misma manera. Se tiene una variable **x** (sabor), se pasa esta variable a una función **g** (la máquina que hace la base) y el resultado de esta función (la base terminada) se pasa después a una función **f** (la máquina que hace la decoración).
+
+![](https://i.ibb.co/MkRxMw2/composicion-funciones.png)
+
+La **Composición** es en esencia ese proceso en el que se pasa una variable a una función y lo que sale de esa función se pasa por parámetro a otra.
+
+La composición se puede representar de las siguientes maneras.
+
+![](https://i.ibb.co/d0W25bg/definicion-composicion.png)
