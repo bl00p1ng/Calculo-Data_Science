@@ -16,6 +16,7 @@
     - [Clase 8. ¿Cómo manipular funciones?](#clase-8-cómo-manipular-funciones)
     - [Clase 9. Funciones dentro de otras funciones](#clase-9-funciones-dentro-de-otras-funciones)
     - [Clase 10. Características de las funciones](#clase-10-características-de-las-funciones)
+    - [Clase 11. ¿Cómo se compone una neurona?](#clase-11-cómo-se-compone-una-neurona)
 
 ## 📚 Módulo 1. Introducción
 
@@ -232,7 +233,7 @@ Se llaman así porque tanto su dominio como el codominio (rango o imagen) están
 
   - **La función es monótona y estrictamente decreciente:**
   
-  ![](https://i.ibb.co/xDkxNxW/funcion-monotona-estrictamente-decreciente.png)
+    ![](https://i.ibb.co/xDkxNxW/funcion-monotona-estrictamente-decreciente.png)
 
   - **La función es monótona y creciente:**
 
@@ -261,5 +262,17 @@ Se llaman así porque tanto su dominio como el codominio (rango o imagen) están
   Ahora, ¿qué sería una función convexa? Pues así es, lo contrario de una cóncava. Se dice que una función dentro de un intervalo es convexa si la función “abre hacia abajo”. Es decir si se ve la siguiente manera:
 
   ![](https://i.ibb.co/zVNWtkv/funcion-convexa.png)
+
+
+### Clase 11. ¿Cómo se compone una neurona?
+
+Una **neurona** es una parte fundamental de una **red neuronal**. Básicamente es una forma fancy de referirse a una función.
+Estas necesitan recibir estímulos al igual que ocurre con las neuronas biológicas. Dichos *"estímulos"* se usan para hacer una **suma ponderada** dentro de la función
+
+**Componentes de una Neurona:**
+
+![](https://i.ibb.co/cr4WBnR/1.png)
+![](https://i.ibb.co/gwzVTv8/2.png)
+
 
 
