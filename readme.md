@@ -17,6 +17,7 @@
     - [Clase 9. Funciones dentro de otras funciones](#clase-9-funciones-dentro-de-otras-funciones)
     - [Clase 10. Características de las funciones](#clase-10-características-de-las-funciones)
     - [Clase 11. ¿Cómo se compone una neurona?](#clase-11-cómo-se-compone-una-neurona)
+    - [Clase 12. Funciones de activación en una neurona](#clase-12-funciones-de-activación-en-una-neurona)
 
 ## 📚 Módulo 1. Introducción
 
@@ -275,4 +276,137 @@ Estas necesitan recibir estímulos al igual que ocurre con las neuronas biológi
 ![](https://i.ibb.co/gwzVTv8/2.png)
 
 
+### Clase 12. Funciones de activación en una neurona
+
+Las funciones de activación se encargan de activar o desactivar las neuronas dependiendo del valor de entrada, por ejemplo si el valor es muy alto o muy bajo. Estas funciones se representan con la letra **φ** (fi).
+
+**Cómo funcionan**
+![](https://i.ibb.co/Nsq72Ws/funcion-de-activacion.png)
+
+Los valores de entrada pasan a la neurona y luego el resultado de esto pasa a la función de activación. Esta regresa un resultado más normalizado (0 - 1, -1 - 1, etc) dependiendo de la función de activación que se utilice.
+
+Si se mira desde el punto de vista de las gráficas de las funciones, la ***neurona*** regresa un **gráfico lineal** que luego la **función de activación convierte en un gráfico no lineal**. Esto es útil porque en el mundo real es muy poco probable que los datos sean lineales, puesto que lo común es que estén dispersos.
+
+**Algunas funciones de activación**
+- **Función escalón de Heaviside:** 
+  También conocida como función de paso escalonado o escalón binario.
+
+  **Fórmula:**
+
+  ![](https://i.ibb.co/phNWPbT/funcion-heaviside.jpg)
+
+  **Grafica**
+
+  ![](https://i.ibb.co/2YFZVfD/heviside-grafica.webp)
+
+- **Función Sigmoide:** 
+  Es una función muy usada en el mundo del Data Science y el ML esto se debe que dadas sus características es muy útil en el calculo de probabilidades. La función sigmoide transforma los valores introducidos a una escala (0,1), donde los valores altos tienen de manera asintótica a 1 y los valores muy bajos tienden de manera asintótica a 0. No obstante no importa que que tan grandes sean los valores, estos nunca llegaran a ser 0 ó 1 como tal.
+  Esta función se suele representar con el símbolo $\sigma$ (sigma)
+
+  **Fórmula:**
+
+  ![](https://i.ibb.co/jWWX3ns/funcion-sigmoide-formula.jpg)
+
+  **Código:**
+
+  ```python
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import math
+
+  N = 100
+
+  x = np.linspace(-10,10,num=N)
+
+  z= 1/(1 + np.exp(-x))
+
+  fig, ax = plt.subplots()
+  ax.plot(x,z)
+  ax.axhline(y=0, color='red')
+  ax.axvline(x=0, color='red')
+  plt.grid()
+  ```
+
+  **Gráfica:**
+
+  ![](https://i.ibb.co/d5MNrF3/funcion-sigmoide-grafico.jpg)
+
+  El punto del medio es exactamente *0.5*.
+
+  El *rango* se esta función es:
+  $R = (0, 1)$  Los paréntesis indican un *intervalo abierto* es decir que el rango esta entre 0 y 1 pero nunca alcanza a ser 0 ó 1 como tal.
+
+- **Función tangente hiperbólica:**
+  Se suele representar como $\tanh$. Es la relación del seno hiperbólico al coseno hiperbólico: $tannhx = sinhx / cosh$. A diferencia de la Función Sigmoidea, el rango normalizado de tanh es de (−1,1) . La ventaja de tanh es que puede manejar más fácilmente los números negativos.
+
+  **Fórmula:**
+
+  ![](https://i.ibb.co/SRTnn97/funcion-tanh.webp)
+
+  **Código:**
+  
+  ```python
+  import numpy as np
+  import matplotlib.pyplot as plt
+  import math
+
+  N = 100
+  x = np.linspace(-5,5,num=N)
+  z= (np.exp(x) - np.exp(-x))/(np.exp(x) + np.exp(-x))
+
+  fig, ax = plt.subplots()
+  ax.plot(x,z)
+  ax.axhline(y=0, color='black')
+  ax.axvline(x=0, color='black')
+  plt.grid()
+  ```
+
+  **Gráfica:**
+
+  ![](https://i.ibb.co/4TtxRcg/funcion-tanh-grafica.jpg)
+
+- **Función ReLU o Rectificación lineal**
+
+  *(Rectified Linear Unit)* Las* funciones de Rectificado lineal son transformaciones que activan un nodo sólo si la entrada está por encima de una cierta cantidad. Mientras la entrada es inferior a cero, la salida es cero, pero cuando la entrada supera un cierto umbral, tiene una relación lineal con el dependiente variable. 
+  Esta función muy usada en redes convolucionales y Deep Learning.
+
+  **Fórmula:**
+
+  ![](https://i.ibb.co/tcY44pK/funcion-RELU.jpg)
+
+  0 para $x <= 0$
+
+  $x$ para $x > 0$
+
+  El rango de esta función es: $R = [0, \infty)$
+
+  **Código:**
+
+  ```python
+  import numpy as np
+  import matplotlib.pyplot as plt
+
+  deff(x):
+    y = np.zeros(len(x))
+    for idx,x in enumerate(x):
+      if x >= 0:
+        y[idx] = x
+    return y
+
+  x = np.linspace(-10, 10, num=100)
+
+  y= f(x)
+
+  fig, ax = plt.subplots()
+
+  ax.plot(x,y)
+  # ax.axhline(y=0, color='black')
+  ax.axvline(x=0, color='black')
+
+  ax.grid()
+  ```
+
+  **Gráfica:**
+  
+  ![](https://i.ibb.co/YDH1YmR/funcion-RELU-grafica.jpg)
 
