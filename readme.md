@@ -18,6 +18,7 @@
     - [Clase 10. Características de las funciones](#clase-10-características-de-las-funciones)
     - [Clase 11. ¿Cómo se compone una neurona?](#clase-11-cómo-se-compone-una-neurona)
     - [Clase 12. Funciones de activación en una neurona](#clase-12-funciones-de-activación-en-una-neurona)
+    - [Clase 13. Función de coste: calcula qué tan erradas son tus predicciones](#clase-13-función-de-coste-calcula-qué-tan-erradas-son-tus-predicciones)
 
 ## 📚 Módulo 1. Introducción
 
@@ -410,3 +411,23 @@ Si se mira desde el punto de vista de las gráficas de las funciones, la ***neur
   
   ![](https://i.ibb.co/YDH1YmR/funcion-RELU-grafica.jpg)
 
+
+### Clase 13. Función de coste: calcula qué tan erradas son tus predicciones
+
+![](https://i.ibb.co/yQph011/ECM-ejemplo-1.webp)
+
+Los puntos representan la relación entre el gasto en publicidad y las ventas en una empresa($y$). La línea representa una predicción sobre el comportamiento de los datos ($ŷ$).
+
+Para calcular que tan alejados están los datos reales de la predicción hay que calcular el **error**:
+
+$error = ŷ - y$
+
+Para normalizar el valor del error en un número positivo y además "castigar" dicha diferencia haciendo que el error sea más pequeño si la diferente es pequeña y viceversa se eleva la diferencia entre la predicción y los datos reales al cuadrado.
+
+$E = (ŷ - y)^2$
+
+El anterior sería el valor del error en uno solo de los puntos, para calcular el error de todos los datos y condensarlo en un sólo valor se usa la siguiente fórmula:
+
+![](https://i.ibb.co/Lv40HKf/ECM-formula.webp)
+
+Esta es la ecuación del **Error Cuadrático Medio**, una ecuación muy usada en el Data Science. Su nombre se debe a que parte desde un *error*, lo *eleva al cuadrado* y finalmente se saca un *promedio*. Esta es una **función de coste** de las más sencillas que hay, aunque no es la única función de coste que existe. Una función de coste representa que tan alejada esta la predicción con respecto a los datos reales.
