@@ -22,6 +22,7 @@
     - [Clase 14. ¿Qué es un límite?](#clase-14-qué-es-un-límite)
   - [📚 Módulo 3. Cálculo diferencial](#-módulo-3-cálculo-diferencial)
     - [Clase 15. ¿De dónde surge la derivada?](#clase-15-de-dónde-surge-la-derivada)
+    - [Clase 16. Notación de la derivada](#clase-16-notación-de-la-derivada)
 
 ## 📚 Módulo 1. Introducción
 
@@ -547,3 +548,44 @@ $$\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$$
 ⬆ Esta es la **definición formal de la derivada**.
 
 **ℹ Nota:** las derivadas no se pueden calcular en todas las funciones, ya que por ejemplo en las funciones discontinuas existe un salto por lo que el limite lateral izquierdo es diferente al derecho por lo que el límite no existe y ya que las derivadas están dadas por el límite, no es posible calcular la derivada en este tipo de funciones.
+
+
+### Clase 16. Notación de la derivada
+
+Existen diferentes formas de expresar la derivada. Cada una de ellas fue propuesta por un científico diferente al momento de desarrollar los principios del cálculo.
+
+- **Notación de Leibniz:**
+  La notación de Leibniz surge del símbolo $dy/dx$ que representa un operador de diferenciación y no debemos confundirlo como una división. 
+  
+  Si quisiéramos expresar una segunda derivada usando la notación de Leibniz se puede mostrar como:
+
+  ![](https://i.ibb.co/JzC2c8r/notacion-Leibniz-segunda-derivada.png)
+
+  Y para mostrar la n-ésima derivada se expresa de la forma:
+
+  ![](https://i.ibb.co/dJhVgtw/notacion-Leibniz-n-esima-derivada.png)
+
+  Esta notación nos sirve para entender como la derivada puede ser expresada como los incrementos tanto de x como de y cuando el incremento de x tiende a cero. 
+  
+  ![](https://i.ibb.co/pZwbtNC/DwA8heo.png)
+
+  La notación de Leibniz es útil cuando se tienen ecuaciones con más de una variable, ya que especifica con respecto a que variable se quiere derivar.
+
+- **Notación de Lagrange:**
+  La notación más sencilla de todas es la de Lagrange. Esta notación expresa que la función es una derivada usando una comilla simple antes del argumento, llamada *prima*.
+
+  ![](https://i.ibb.co/2SwRHW7/shUJtc0.png)
+
+  Esta expresión se lee como “efe prima de equis”. La cual representa la primera derivada de una función. Si deseamos expresar la segunda derivada sería:
+
+  ![](https://i.ibb.co/G9JtqWk/Z1Vboyd.png)
+
+  Y para mostrar la n-ésima derivada se expresa de la forma:
+
+  ![](https://i.ibb.co/YNqW1v3/udihVSe.png)
+
+- **Notación de Newton:**
+  Por último tenemos la notación de Newton. Esta notación es muy usada en campos como la física y la ingeniería debido a su simplicidad para expresar la primera y segunda derivada. Se usa sobre todo en funciones relacionadas al tiempo en campos como la mecánica. Por ejemplo, como una función que representa el movimiento de una partícula.
+
+  Su representación de la primera y segunda derivada es la siguiente: 
+  $$ẋ ẍ$$
