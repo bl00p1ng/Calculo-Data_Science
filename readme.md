@@ -20,6 +20,8 @@
     - [Clase 12. Funciones de activación en una neurona](#clase-12-funciones-de-activación-en-una-neurona)
     - [Clase 13. Función de coste: calcula qué tan erradas son tus predicciones](#clase-13-función-de-coste-calcula-qué-tan-erradas-son-tus-predicciones)
     - [Clase 14. ¿Qué es un límite?](#clase-14-qué-es-un-límite)
+  - [📚 Módulo 3. Cálculo diferencial](#-módulo-3-cálculo-diferencial)
+    - [Clase 15. ¿De dónde surge la derivada?](#clase-15-de-dónde-surge-la-derivada)
 
 ## 📚 Módulo 1. Introducción
 
@@ -506,4 +508,42 @@ Es lo mismo sólo que se pone un $+$ en el super-índice para denotar que se est
 
 En ese caso el límite por la derecha tienda al infinito $+$ --> +1/0.0000000000001... al igual que el límite por la izquierda $-$ --> -1/0.0000000000001…
 
-Entre más nos acerquemos a cero el valor crece mucho y los límites por derecha e izquierda son muy distintos. Prácticamente están tendiendo a infinito. 
+Entre más nos acerquemos a cero el valor crece mucho y los límites por derecha e izquierda son muy distintos. Prácticamente están tendiendo a infinito.
+
+
+## 📚 Módulo 3. Cálculo diferencial
+### Clase 15. ¿De dónde surge la derivada?
+
+La derivada surge a partir de la necesidad de tener un método para calcular al tangente de una curva. Este problema ya estaba resuelto con otro  tipo de figuras, pero cuando se trataba de curvas o funciones era muy difícil calcular la tangente.
+
+La **tangente** es una línea recta que toca a la curva en un sólo punto.
+
+![](https://i.ibb.co/Bn8Y9Jy/tangente-curva.png)
+
+No obstante calcular la tangente de una curva no es tan sencillo como trazar una línea que toque la curva y ya, por eso se usa a la **secante** como una ayuda para este proceso.
+
+**La secante** es una línea recta que corta a la curva en 2 puntos.
+
+![](https://i.ibb.co/7YHxvYn/derivadas-1.png)
+
+$\Delta$ (Delta) es un símbolo que se utiliza para representar incrementos. De ahora en adelante en esta explicación $\Delta x = h$ para efectos prácticos.
+
+Ahora que se tiene la secante, para calcular la tangente lo que hay que hacer es aproximar lo máximo posible el punto $x + \Delta x$ al punto $x$. A medida que se hace el desplazamiento la pendiente va cambiando.
+
+![](https://i.ibb.co/XZJ1gbQ/derivadas-2.png)
+
+Mientras más pequeña sea la diferencia entre los 2 puntos (aproximándose a 0), más se aproximará la pendiente de la recta a la pendiente de la tangente. Debido a que estos valores son muy pequeños y tienden a cero se expresan en notación de límite.
+
+$$m = \frac{y_2 - y_1}{x_2 - x_1}$$
+
+Si se sustituyen los valores:
+
+$$m = \frac{f(x+h)-f(x)}{x+h-x}=\frac{f(x+h)-f(x)}{h}$$
+
+Al usar la notación de límite para representar que la distancia se aproxima a cero:
+
+$$\lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$$
+
+⬆ Esta es la **definición formal de la derivada**.
+
+**ℹ Nota:** las derivadas no se pueden calcular en todas las funciones, ya que por ejemplo en las funciones discontinuas existe un salto por lo que el limite lateral izquierdo es diferente al derecho por lo que el límite no existe y ya que las derivadas están dadas por el límite, no es posible calcular la derivada en este tipo de funciones.
