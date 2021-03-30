@@ -19,6 +19,7 @@
     - [Clase 11. ¿Cómo se compone una neurona?](#clase-11-cómo-se-compone-una-neurona)
     - [Clase 12. Funciones de activación en una neurona](#clase-12-funciones-de-activación-en-una-neurona)
     - [Clase 13. Función de coste: calcula qué tan erradas son tus predicciones](#clase-13-función-de-coste-calcula-qué-tan-erradas-son-tus-predicciones)
+    - [Clase 14. ¿Qué es un límite?](#clase-14-qué-es-un-límite)
 
 ## 📚 Módulo 1. Introducción
 
@@ -431,3 +432,78 @@ El anterior sería el valor del error en uno solo de los puntos, para calcular e
 ![](https://i.ibb.co/Lv40HKf/ECM-formula.webp)
 
 Esta es la ecuación del **Error Cuadrático Medio**, una ecuación muy usada en el Data Science. Su nombre se debe a que parte desde un *error*, lo *eleva al cuadrado* y finalmente se saca un *promedio*. Esta es una **función de coste** de las más sencillas que hay, aunque no es la única función de coste que existe. Una función de coste representa que tan alejada esta la predicción con respecto a los datos reales.
+
+
+### Clase 14. ¿Qué es un límite?
+
+![](https://i.ibb.co/wQp4bgz/notacion-limite.png)
+
+![](https://i.ibb.co/CJW7VfX/explicacion-notacion-limite.png)
+
+El límite evaluá que pasa si se toma un punto A y se aproxima este hasta un punto B. En otras palabras los límites describen cómo se comporta una función cerca de un punto, en vez de en ese punto. Esta simple pero poderosa idea es la base de todo el cálculo.
+
+Por ejemplo si se tiene la función $f(x)=x+2$
+
+![](https://i.ibb.co/S0XxsF0/func-1.png)
+
+El límite de $f$ en $x = 3$ es el valor al cual se aproxima $f$ a medida que nos acercamos más y más a $x = 3$. Gráficamente, es el valor de $y$ al que tendemos en la gráfica de $f$ al acercarnos más y más al punto de la gráfica donde $x = 3$.
+
+Por ejemplo, si partimos del punto (1,3) y nos movemos en la gráfica hasta estar muy cerca de $x = 3$, entonces nuestro valor $y$ (es decir, el valor de la función) está muy cerca de 5.
+
+![](https://i.ibb.co/PF47j02/7f460d0a673f5af283702fccf1d9da7462a48a5a.gif)
+
+Similarmente, si empezamos en (5,7) y nos movemos a la izquierda hasta estar muy cerca de $x = 3$, el valor $y$ nuevamente estará muy cerca de 5.
+
+![](https://i.ibb.co/Bj0X52Z/11ab15823702ab90d5198a2dcd37d65d52627e7b.gif)
+
+Por estas razones, decimos que el límite de $f$ en $x =3$ es 5.
+
+![](https://i.ibb.co/nzvCdkG/ejemplo-limite.png)
+
+Tal vez te preguntes cuál es la diferencia entre el *límite* de $f$ en $x =3$, 3 y el *valor* de $f$ en $x 0= 3$, es decir, $f(3)$.
+
+Y sí, el límite de $f(x) =x + 2$ en $x = 3$ es igual a $f(3$, pero este no siempre es el caso. Para entender esto, consideremos la función $g$. Esta función es igual a $f$, excepto que no está definida para $x = 3$
+
+![](https://i.ibb.co/MGs1MD9/func-2.png)
+
+Tal como con $f$, el límite de $g$ en $ x = 3$ es 5. Esto se debe a que aún podemos acercarnos mucho a $x = 3$ y los valores de la función se acercarán mucho a 5.
+
+![](https://i.ibb.co/NFnP0gN/func-2-1.png)
+
+Así que el límite de $g$ en $x = 3$ es igual a 5, ¡pero el valor de $g$ en $x = 3$ no está definido! ¡No son lo mismo!
+
+Esa es la belleza de los límites: no dependen del valor real de la función en el límite. Describen cómo se comporta la función al acercarse al límite.
+
+*Fuente de la explicación anterior* ➡ https://es.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-2/a/limits-intro
+
+_**Ejemplo:**_
+
+Si se pidiera calcular el valor de la función $f(x)=\frac{x^2 - 4}{x - 2}$ cuando $x = 2$ tendríamos una indeterminación debido a que $f(2) = \frac{2^2 - 4}{2 - 2} = \frac{4 - 4}{0} = \frac{0}{0}$. No obstante aunque el valor de la función en $x = 2$ es indeterminado lo que si se puede hacer es calcular su límite pues este no depende del valor real de la función.
+
+$$\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = \frac{(x - 2)(x + 2)}{x - 2}$$
+
+Lo anterior se resuelve fácilmente debido a que el comportamiento de los polinomios es una *diferencia de cuadrados*.
+
+$$\lim_{x \to 2} = x + 2 = 2 + 2 = 4$$
+
+**Límites laterales:**
+
+Establecen cuál es el valor que toma una función cuando se hace una aproximación desde la izquierda o la derecha.
+
+![](https://i.ibb.co/263Tgfp/limites-laterales-1.png)
+
+Se agrega el super-índice con un signo de $-$ para denotar que se esta acercando al valor por la izquierda.
+
+![](https://i.ibb.co/MGH8CNf/limites-laterales-2.png)
+
+Es lo mismo sólo que se pone un $+$ en el super-índice para denotar que se esta acercando al valor por la derecha.
+
+![](https://i.ibb.co/sPptZ1Y/limites-laterales-3.png)
+
+**ℹ Nota:** que pasa cuando el límite tiende a 0 de $\frac{1}{x}$. En otras palabras que valor tiene la función cuando nos aproximamos a cero por la izquierda y la derecha.
+
+![](https://i.ibb.co/bXYBDw0/limite-cero.png)
+
+En ese caso el límite por la derecha tienda al infinito $+$ --> +1/0.0000000000001... al igual que el límite por la izquierda $-$ --> -1/0.0000000000001…
+
+Entre más nos acerquemos a cero el valor crece mucho y los límites por derecha e izquierda son muy distintos. Prácticamente están tendiendo a infinito. 
