@@ -23,6 +23,7 @@
   - [📚 Módulo 3. Cálculo diferencial](#-módulo-3-cálculo-diferencial)
     - [Clase 15. ¿De dónde surge la derivada?](#clase-15-de-dónde-surge-la-derivada)
     - [Clase 16. Notación de la derivada](#clase-16-notación-de-la-derivada)
+    - [Clase 17. Empecemos a derivar](#clase-17-empecemos-a-derivar)
 
 ## 📚 Módulo 1. Introducción
 
@@ -589,3 +590,96 @@ Existen diferentes formas de expresar la derivada. Cada una de ellas fue propues
 
   Su representación de la primera y segunda derivada es la siguiente: 
   $$ẋ ẍ$$
+
+
+### Clase 17. Empecemos a derivar
+
+Todas las definiciones de las derivadas dependiendo de la función parten de la definición de límite de la derivada.
+
+**Reglas de Derivación**
+
+![](https://i.ibb.co/k8dC2Zh/reglas-derivadas-1.png)
+
+![](https://i.ibb.co/wg1fS2G/reglas-derivadas-2.png)
+
+![](https://i.ibb.co/fYqrhsq/reglas-derivadas-3.png)
+
+Permite calcular la derivada de una composición de funciones
+
+_**Ejemplos:**_
+
+- **Suma:**
+  
+  *Fórmula:*
+  $$(f+g)'(x) = f(x)'+g(x)'$$
+
+  Fórmula para calcular la derivada de $x^n$:
+
+  $$x^n = nx^{n-1}$$
+  ***
+
+  $$f(x) = x^2$$
+
+  $$g(x) = 4x^2$$
+
+  Así se resolvería directamente, sumando ambas funciones y derivando después.
+
+  $$\frac{d(5x^2)}{dx} = 5*2x = 10x$$
+  
+  ⬆ **Explicación:** $5x^2$ es el resultado de la suma de $x^2 + 4x^2$. $10x$ es el resultado de aplicar la fórmula para calcular la derivada de $x^n$.
+  ***
+
+  Así se resolvería aplicando la regla de la suma en la derivación, en la que se saca la derivada de cada función y luego se suman.
+
+  $$\frac{df}{dx} = x^2 = 2x$$
+
+  $$\frac{dg}{dx} = 4x^2 = 4*2x = 8x$$
+
+  $$2x+8x=10x$$
+
+- **Producto:**
+
+  *Fórmula:*
+
+  $$(f*g)'(x)=f(x)g'(x)+g(x)f'(x)$$
+
+  La derivada del $\cos$ es $-\sin(x)$
+
+  La derivada del $\sin$ es el $\cos$
+  ***
+
+  $$f(x)=\cos(x)$$
+
+  $$g(x)=\sin(x)$$
+
+  $$(f*g)(x)=\cos(x)\sin(x)$$
+
+  $$f'(x)=-\sin(x)$$
+
+  $$g'(x)=\cos(x)$$
+
+  $$(f*g)'(x)=\cos(x)\cos(x)+\sin(x)[-\sin(x)]$$
+
+  Al realizar el cálculo al final queda:
+
+  $$(f*g)'(x)=\cos^2(x)-\sin^2(x)$$
+
+- **Composición de funciones (regla de la cadena):**
+  
+  *Fórmula:*
+
+  $$(f \circ g)'(x)=f'(g(x))*g'(x)$$
+
+  $$f(x)=\sin(x)$$
+
+  $$g(x)=x^3$$
+
+  $$f \circ g = \sin(x^3)$$
+
+  Derivadas de las funciones:
+
+  $$f'(x)=\cos(x)$$
+
+  $$g'(x)=3x^2$$
+
+  $$(f \circ g)'(x)=\cos(x^3)*3x^2$$
