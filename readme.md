@@ -27,6 +27,11 @@
     - [Clase 18. ¿Por qué es importante la derivada?](#clase-18-por-qué-es-importante-la-derivada)
       - [La derivada para encontrar la velocidad](#la-derivada-para-encontrar-la-velocidad)
       - [La razón de cambio](#la-razón-de-cambio)
+    - [Clase 19. Máximos y mínimos: subidas y bajadas en una montaña rusa](#clase-19-máximos-y-mínimos-subidas-y-bajadas-en-una-montaña-rusa)
+      - [Formas de calcular los máximos y los mínimos](#formas-de-calcular-los-máximos-y-los-mínimos)
+        - [Teorema de la primera derivada](#teorema-de-la-primera-derivada)
+        - [Teorema de las segunda derivada](#teorema-de-las-segunda-derivada)
+    - [Clase 20. ¿Cómo optimizar una función?](#clase-20-cómo-optimizar-una-función)
 
 ## 📚 Módulo 1. Introducción
 
@@ -734,3 +739,82 @@ Las razones de cambio nos dicen qué tanto cambia una cantidad y con respecto a 
 
 Si nuestra derivada es muy grande significa que y crece muy rápido con respecto a x, pero si la derivada es muy pequeña o casi cero entonces el crecimiento de y respecto a x es mínimo.
 
+
+### Clase 19. Máximos y mínimos: subidas y bajadas en una montaña rusa
+
+Los valores **máximos** y **mínimos** de una función son los valores **más altos** y **más bajos** respectivamente.
+
+![](https://i.ibb.co/196NsX7/maximo-minimo-funcion.png)
+
+El máximo y el mínimo de una función serían los puntos en los que la pendiente de la tangente es exactamente 0.
+
+Cuando la derivada sea mayor a cero la pendiente estará subiendo y cuando la derivada sea menor a 0 la pendiente estará bajando.
+
+La función completa puede tener varios máximos y mínimos, así como un **máximo global**, que es el valor más alto, y un **mínimo global** que sería el valor más bajo.
+
+También se pueden analizar secciones específicas de una función en las que el valor más alto y más bajo se llamarían **máximo global** y **mínimo global** respectivamente.
+
+#### Formas de calcular los máximos y los mínimos
+##### Teorema de la primera derivada
+- Si $f'(x)>0$ hacia la izquierda de un punto a y si $f'(x)<0$ hacia la derecha del punto $a$, entonces $f$ tiene un máximo relativo en $(a, f(a))$
+  
+- Si $f'(x)<0$ hacia la izquierda de un punto a y si $f'(x)>0$ hacia la derecha del punto $a$, entonces $$ tiene un minino relativo en $(a, f(a))$
+  
+- Si $f'(x)$ es menor o mayor de ambos lados, no es ni un máximo ni un mínimo
+
+##### Teorema de las segunda derivada
+- Si $f''(x)<0$ entonces $f$ tiene un máximo relativo en $(x, f(x))$
+
+- Si $f''(x)>0$ entonces $f$ tiene un mínimo relativo en $(x, f(x))$
+
+- Si $f''(x)=0$ no se puede determinar si es un máximo o un mínimo o ninguno de los dos. Se debe utilizar el teorema de la primera derivada para poder determinarlo
+
+
+### Clase 20. ¿Cómo optimizar una función?
+
+**Problema:**
+
+![](https://i.ibb.co/qpZytgk/optimizar-funcion-ejemplo.png)
+
+Encontrar el tamaño de los muros que permita obtener la mayor área en m², o en otras palabras, encontrar el tamaño de los muros que permita tener una oficina más  grande. *Sólo se pueden construir 50 metros de muro*.
+
+**Desarrollo:**
+
+Para *calcular el área* se usar la fórmula super conocida: $A=xy$
+
+Para *calcular el perímetro* hay que sumar cada lado. En este ejemplo el perímetro total son los 50 metros de muro que se pueden construir: $x+y+x=50=2x+y=5$
+
+A partir del punto anterior se puede despejar $y$:
+
+$$y=50-2x$$
+
+Con esto ya se puede sustituir $y$ en la ecuación del área:
+
+$$A=x(50-2x)=50x-2x^2$$
+
+Ahora que ya se tiene el área expresada en función de $x$ se puede convertir esto en una función, es precisamente este función la que se va a optimizar.
+
+$$A(x)=50x-2x^2$$
+
+Para optimizar la función anterior y encontrar el valor máximo se usa la derivada:
+
+$$A'(x)=50-4x=0$$
+⬆ Para encontrar el punto en que la pendiente es igual a cero (el máximo y el mínimo) hay que igualar la derivada a cero
+
+Para encontrar cuando la ecuación anterior se vuelve cero hay que despejar $x$.
+
+$$x=\frac{-50}{-4}=\frac{25}{2}=12.5$$
+
+Ahora hay que corroborar que $12.5$ sea el valor máximo, esto normalmente se hace usando el teorema de la primera/segunda derivada, pero en este ejemplo se va usar un método más sencillo y intuitivo para principiantes y es evaluar la derivada en un valor cercano a la derecha y a la izquierda, el valor de la izquierda debe ser positivo y el de la derecha negativo para que $12.5$ sea el valor máximo.
+
+$$A'(x=12.45)=50-4(12.45)=\frac{1}{5}$$
+
+$$A'(x=12.55)=50-4(12.55)=-\frac{1}{5}$$
+
+Ahora que ya se tiene el valor de $x$ sólo hay que sustituirlo en la ecuación de $y$ para encontrar el valor de esta última variable:
+
+$$y=50-2(12.5)=25$$
+
+Ya con eso sabemos que para obtener el área más grande en las oficinas usando sólo los 50 metros de muro disponibles los muros deben ser de 12.5m y 25m.
+
+![](https://i.ibb.co/YDpGq15/optimizar-funcion-ejemplo-2.png)
