@@ -24,6 +24,9 @@
     - [Clase 15. ¿De dónde surge la derivada?](#clase-15-de-dónde-surge-la-derivada)
     - [Clase 16. Notación de la derivada](#clase-16-notación-de-la-derivada)
     - [Clase 17. Empecemos a derivar](#clase-17-empecemos-a-derivar)
+    - [Clase 18. ¿Por qué es importante la derivada?](#clase-18-por-qué-es-importante-la-derivada)
+      - [La derivada para encontrar la velocidad](#la-derivada-para-encontrar-la-velocidad)
+      - [La razón de cambio](#la-razón-de-cambio)
 
 ## 📚 Módulo 1. Introducción
 
@@ -683,3 +686,51 @@ _**Ejemplos:**_
   $$g'(x)=3x^2$$
 
   $$(f \circ g)'(x)=\cos(x^3)*3x^2$$
+
+### Clase 18. ¿Por qué es importante la derivada?
+
+Algunas aplicaciones que tiene la derivada.
+
+#### La derivada para encontrar la velocidad
+
+La derivada puede usarse para encontrar la velocidad instantánea en determinado punto. Suponiendo que se tiene una función $s=d(t)$, que representa la distancia recorrida por alguien al salir a trotar en las mañanas dicha función tiene como variable independiente el tiempo y como dependiente la distancia.
+
+Para conocer la velocidad promedio en un intervalo de tiempo entre $t=a$ y $t=h$ ($a$ y $h$ son 2 constantes positivas) se puede aplicar la conocida fórmula para encontrar la velocidad ($v=\frac{d}{t}$) que aplicada a este ejemplo quedaría:
+
+![](https://i.ibb.co/LtBVGsr/6kyYpyU.png)
+
+Al realizar la resta del denominador quedaría como:
+
+![](https://i.ibb.co/LrCNghr/FJpDJiB.png)
+
+En un gráfico todo esto se vería de la siguiente forma:
+
+![](https://i.ibb.co/58TJ5rP/Yb2rCe8.jpg)
+
+⬆ La velocidad promedio es la recta que esta entre los 2 intervalos de tiempo ($P$ y $Q$), pero si se quiere saber cuál es la velocidad instantánea en alguno de los puntos, como por ejemplo $P$ que es cuando el tiempo t=a es necesario aplicar el límite a medida que $h$ (la distancia entre $P$ y $Q$) tiende a cero, al hacer esto estaríamos usando una derivada para calcular la velocidad instantánea en alguno de los puntos.
+
+![](https://i.ibb.co/dcbm0Pz/9Ci9LcD.png)
+
+#### La razón de cambio
+
+Las derivadas se pueden interpretar de una forma más general, y es como la **razón de cambio**. Las funciones son dos cantidades que dependen una de otra y en la vida práctica ese comportamiento esta por todos lados (la cocción de un alimento depende del tiempo en que lo dejemos en el fuego, el precio de un producto depende de su demanda en el mercado, etc) por lo que se pueden usar derivadas para calcular que tanto cambia una función en un momento determinado, lo cuál brinda un mundo de posibilidades para estudiar el comportamiento de diversos datos y la “velocidad” con la que estos cambian en un sinfín de casos prácticos.
+
+Si estudiamos las funciones como pequeños cambios tenemos que estudiar sus incrementos. Para hacer eso hay que tener presente que si tenemos la función $y=f(x)$, entonces su incremento en $x$ cuando pasamos de $x_1$ a $x_2$ es:
+
+![](https://i.ibb.co/Q70cM1J/sLqSAFm.png)
+**ℹ Nota:** el símbolo delta en mayúscula sirve para indicar el cambio entre dos cantidades.
+
+Para el cambio en **y** se usaría:
+
+![](https://i.ibb.co/xGXVKkn/UcEl3gp.png)
+
+A la división de estos dos incrementos la llamamos razón de cambio promedio de y con respecto a x.
+
+![](https://i.ibb.co/RS9KKkw/z117ffz.png)
+
+Las razones de cambio nos dicen qué tanto cambia una cantidad y con respecto a $x$. Específicamente la razón de cambio promedio nos dice que tanto cambia y en un intervalo entre $x_1$ y $x_2$. Por lo que si queremos saber qué tanto cambia una función en un instante determinado debemos aplicar la razón de cambio instantánea que es la definición de la derivada.
+
+![](https://i.ibb.co/Jrp3Yxz/yuhEZrR.png)
+
+Si nuestra derivada es muy grande significa que y crece muy rápido con respecto a x, pero si la derivada es muy pequeña o casi cero entonces el crecimiento de y respecto a x es mínimo.
+
