@@ -32,6 +32,8 @@
         - [Teorema de la primera derivada](#teorema-de-la-primera-derivada)
         - [Teorema de las segunda derivada](#teorema-de-las-segunda-derivada)
     - [Clase 20. ¿Cómo optimizar una función?](#clase-20-cómo-optimizar-una-función)
+  - [📚 Módulo 4. Cálculo multivariable](#-módulo-4-cálculo-multivariable)
+    - [Clase 21. Más dimensiones para tus funciones](#clase-21-más-dimensiones-para-tus-funciones)
 
 ## 📚 Módulo 1. Introducción
 
@@ -818,3 +820,14 @@ $$y=50-2(12.5)=25$$
 Ya con eso sabemos que para obtener el área más grande en las oficinas usando sólo los 50 metros de muro disponibles los muros deben ser de 12.5m y 25m.
 
 ![](https://i.ibb.co/YDpGq15/optimizar-funcion-ejemplo-2.png)
+
+
+## 📚 Módulo 4. Cálculo multivariable
+
+### Clase 21. Más dimensiones para tus funciones
+
+A lo largo del curso se ha trabajado con funciones que sólo reciben una sola variable por parámetro (univariable). No obstante las funciones pueden tener más de una variable.
+
+Sin importar las variables que tenga la función, al final siempre va a salir un resultado.
+
+![](https://i.ibb.co/nLVL07T/funciones-multivariable.png)
