@@ -34,6 +34,7 @@
     - [Clase 20. ¿Cómo optimizar una función?](#clase-20-cómo-optimizar-una-función)
   - [📚 Módulo 4. Cálculo multivariable](#-módulo-4-cálculo-multivariable)
     - [Clase 21. Más dimensiones para tus funciones](#clase-21-más-dimensiones-para-tus-funciones)
+    - [Clase 22. Diseñando mapas: curvas de nivel](#clase-22-diseñando-mapas-curvas-de-nivel)
 
 ## 📚 Módulo 1. Introducción
 
@@ -484,7 +485,7 @@ Tal como con $f$, el límite de $g$ en $ x = 3$ es 5. Esto se debe a que aún po
 
 ![](https://i.ibb.co/NFnP0gN/func-2-1.png)
 
-Así que el límite de $g$ en $x = 3$ es igual a 5, ¡pero el valor de $g$ en $x = 3$ no está definido! ¡No son lo mismo!
+Así que el límite de $g$ en $x = 3$ es igual a 5, ¡Pero el valor de $g$ en $x = 3$ no está definido! ¡No son lo mismo!
 
 Esa es la belleza de los límites: no dependen del valor real de la función en el límite. Describen cómo se comporta la función al acercarse al límite.
 
@@ -831,3 +832,7 @@ A lo largo del curso se ha trabajado con funciones que sólo reciben una sola va
 Sin importar las variables que tenga la función, al final siempre va a salir un resultado.
 
 ![](https://i.ibb.co/nLVL07T/funciones-multivariable.png)
+
+### Clase 22. Diseñando mapas: curvas de nivel
+
+Este tipo de representaciones son útiles para representar múltiples datos en un espacio tridimensional. Algunos ejemplos de uso de este tipo de gráficas son la representación de alturas, temperaturas y preferencias de usuarios.
