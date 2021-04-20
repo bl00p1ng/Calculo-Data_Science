@@ -36,6 +36,7 @@
     - [Clase 21. Más dimensiones para tus funciones](#clase-21-más-dimensiones-para-tus-funciones)
     - [Clase 22. Diseñando mapas: curvas de nivel](#clase-22-diseñando-mapas-curvas-de-nivel)
     - [Clase 23. Derivadas parciales](#clase-23-derivadas-parciales)
+    - [Clase 24. Ejemplos de derivadas parciales](#clase-24-ejemplos-de-derivadas-parciales)
 
 ## 📚 Módulo 1. Introducción
 
@@ -847,3 +848,23 @@ Este tipo de representaciones son útiles para representar múltiples datos en u
 Las derivadas parciales permiten encontrar la derivada en funciones de más de una variable.
 
 [Explicación de las derivadas parciales](https://es.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/introduction-to-partial-derivatives)
+
+
+### Clase 24. Ejemplos de derivadas parciales
+
+![Ejemplo 1](https://i.ibb.co/McBFvCC/ejemplo-derivadas-parciales-1.png)
+
+![Ejemplo 21](https://i.ibb.co/2j4Kh7M/ejemplo-derivadas-parciales-2.png)
+
+**Dato Matemático:**
+
+1. El conjunto de primeras derivadas parciales se le conoce como **Gradiente**.
+2. La Matriz de segundas derivadas parciales se le comoce como **Hessiana**.
+3. El determinante de la matriz Hessiana se le conoce como **Jacobiano**
+4. El **Jacobiano es útil cuando queremos hacer transformaciones**. Por ejemplo: Pasar del plano cartesiano a coordenadas polares.
+
+**Herramientas para calcular la derivada parcial:**
+
+- https://www.wolframalpha.com/
+- https://www.sympy.org/en/index.html
+- https://es.symbolab.com/
