@@ -38,6 +38,7 @@
     - [Clase 23. Derivadas parciales](#clase-23-derivadas-parciales)
     - [Clase 24. Ejemplos de derivadas parciales](#clase-24-ejemplos-de-derivadas-parciales)
     - [Clase 25. Regla de la cadena y su utilidad en cálculo multivariable](#clase-25-regla-de-la-cadena-y-su-utilidad-en-cálculo-multivariable)
+    - [Clase 26. Subamos con el gradiente](#clase-26-subamos-con-el-gradiente)
 
 ## 📚 Módulo 1. Introducción
 
@@ -900,3 +901,28 @@ La constitución de la regla de la cadena en multivariable cambia dependiendo de
 La regla de la cadena tiene una gran importancia pues nos permite relacionar diferentes funciones que otorgan un valor final de salida contra su variable de entrada. Esto es muy útil cuando estudiamos el comportamiento, como puede ser el precio de un producto, que está determinado por diferentes factores.
 
 [Video explicativo](https://www.youtube.com/watch?v=DFn9wUEBnbU)
+
+
+### Clase 26. Subamos con el gradiente
+
+Es un vector que, dependiendo de una superficie, va a establecer cuál es la forma más rápida de ascender dicha superficie. Su puede pensar en esto como una especie de brújula que muestra por donde subir una montaña más rápido.
+
+El gradiente de una función se representa con el símbolo $\nabla$ (nabla).
+
+![Fórmula gradiente](https://i.ibb.co/ncnwL2c/formula-gradiente.png)
+
+$i$ y $j$ son *vectores unitarios*. a los valores de $x$ se le asigna $i$, a $y$ se le asigna $j$, hay que recordar que un vector tiene ademas de su valor, una dirección, y eso es lo que indican $i$ y $j$.
+
+_**Ejemplo:**_
+
+![Ejemplo gradiente](https://i.ibb.co/NNZbqtp/ejemplo-gradiente.png)
+
+El gradiente almacena toda la información de la derivadas parciales de una función multivariable. Pero es más que un simple dispositivo de almacenamiento, tiene muchas aplicaciones en muchas área de las ciencias.
+El gradiente es una función escalar multivariable que empaqueta toda la información de sus derivadas parciales en un vector.
+
+![Gradiente 1](https://i.ibb.co/YBRHD13/gradiente-1.webp)
+
+Cabe resaltar el la forma del gradiente varia dependiendo las coordenadas que utilicemos, tiene las misma interpretación, pero se utiliza se escribe de destina manera.
+
+![Gradiente 2](https://i.ibb.co/k5hRfZx/gradiente-2.webp)
+
