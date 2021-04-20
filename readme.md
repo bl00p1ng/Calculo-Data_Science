@@ -37,6 +37,7 @@
     - [Clase 22. Diseñando mapas: curvas de nivel](#clase-22-diseñando-mapas-curvas-de-nivel)
     - [Clase 23. Derivadas parciales](#clase-23-derivadas-parciales)
     - [Clase 24. Ejemplos de derivadas parciales](#clase-24-ejemplos-de-derivadas-parciales)
+    - [Clase 25. Regla de la cadena y su utilidad en cálculo multivariable](#clase-25-regla-de-la-cadena-y-su-utilidad-en-cálculo-multivariable)
 
 ## 📚 Módulo 1. Introducción
 
@@ -868,3 +869,34 @@ Las derivadas parciales permiten encontrar la derivada en funciones de más de u
 - https://www.wolframalpha.com/
 - https://www.sympy.org/en/index.html
 - https://es.symbolab.com/
+
+
+### Clase 25. Regla de la cadena y su utilidad en cálculo multivariable
+
+La regla de la cadena aplicada en el cálculo multivariable es muy usada en un proceso de las redes neuronales llamado **Backpropagation**.
+
+la regla de la cadena para una sola variable es sencilla relativamente pues su proceso es lineal, encadenando las funciones. En el caso del cálculo multivariable esto funciona de forma diferente. Al tener más de una función, surgen divisiones en la forma en la que la variable inicial llega a la variable final. Por ejemplo si tenemos una función $w=f(x,y)$ que depende de dos variables $x$ y $y$, pero a su vez estas dependen de una variable $t$. La función que describimos anteriormente se escribe como:
+
+![Ecuación 1](https://imgur.com/LsA97Kk.jpg)
+
+La función $w=f(x,y)$ depende de dos variables, por lo que el cálculo de alguna derivada de esta función concretamente debe ser parcial. Pero tanto las variables $x$ y $y$ solo son respecto a una variable, la variable $t$, por lo que el cálculo de cualquier clase de derivada debe ser total.
+
+En el siguiente diagrama se explica cómo se reacionan estas variables desde $t$ hasta $w$:
+
+![Diagrama 1](https://imgur.com/OgEfDgI.jpg)
+
+En el diagrama se puede apreciar como $t$ es la variable inicial y $w$ termina siendo la variable final de salida. Si se añaden las derivadas en cada una de estas relaciones el diagrama quedaría de la siguiente forma:
+
+![Diagrama 2](https://imgur.com/YYbrIvH.jpg)
+
+Las  derivadas de las funciones $x$ y $y$ son totales porque solo dependen de una única variable $t$. Sin embargo, las derivadas con respecto a $w$ son parciales porque tiene más de dos variables, que en este caso son funciones de $t$. Es por esto que se puede observar en el diagrama que la relación entre variables en algunos puntos es lineal (se conectan consecutivamente) y en otros puntos las relaciones para llegar a $w$ siguen más de un camino (se ven en paralelo).
+
+En las relaciones que sean lineales, se multiplica siguiendo la regla de la cadena para una sola variable. Con esto se obtiene una porción de todas las relaciones, para obtener todas las relaciones y porciones hasta llegar a $w$ hay que agruparlas mediante una suma. Quedan la razón de cambio total (o derivada total) de $w$ respecto a $t$ como:
+
+![Ecuación 2](https://imgur.com/w8CEmQx.jpg)
+
+La constitución de la regla de la cadena en multivariable cambia dependiendo del número de variables intermedias que pueda haber en el proceso de llegar al valor final, no obstante el principio sigue siendo el mismo.
+
+La regla de la cadena tiene una gran importancia pues nos permite relacionar diferentes funciones que otorgan un valor final de salida contra su variable de entrada. Esto es muy útil cuando estudiamos el comportamiento, como puede ser el precio de un producto, que está determinado por diferentes factores.
+
+[Video explicativo](https://www.youtube.com/watch?v=DFn9wUEBnbU)
