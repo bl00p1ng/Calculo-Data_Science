@@ -35,6 +35,7 @@
   - [📚 Módulo 4. Cálculo multivariable](#-módulo-4-cálculo-multivariable)
     - [Clase 21. Más dimensiones para tus funciones](#clase-21-más-dimensiones-para-tus-funciones)
     - [Clase 22. Diseñando mapas: curvas de nivel](#clase-22-diseñando-mapas-curvas-de-nivel)
+    - [Clase 23. Derivadas parciales](#clase-23-derivadas-parciales)
 
 ## 📚 Módulo 1. Introducción
 
@@ -833,6 +834,16 @@ Sin importar las variables que tenga la función, al final siempre va a salir un
 
 ![](https://i.ibb.co/nLVL07T/funciones-multivariable.png)
 
+
 ### Clase 22. Diseñando mapas: curvas de nivel
 
 Este tipo de representaciones son útiles para representar múltiples datos en un espacio tridimensional. Algunos ejemplos de uso de este tipo de gráficas son la representación de alturas, temperaturas y preferencias de usuarios.
+
+[Información sobre Numpy meshgrid](https://interactivechaos.com/es/manual/tutorial-de-numpy/la-funcion-meshgrid)
+
+
+### Clase 23. Derivadas parciales
+
+Las derivadas parciales permiten encontrar la derivada en funciones de más de una variable.
+
+[Explicación de las derivadas parciales](https://es.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/partial-derivative-and-gradient-articles/a/introduction-to-partial-derivatives)
