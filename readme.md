@@ -938,3 +938,5 @@ El descenso del gradiente permite optimizar una función, es decir, encontrar el
 ![Explicación descenso del gradiente](https://i.ibb.co/8cvPmh4/desc-gradiente-info.png)
 
 [Vídeo explicativo](https://www.youtube.com/watch?v=A6FiCDoz8_4)
+
+**ℹ Nota:** el descenso del gradiente sólo es útil en funciones que tienen un único valor mínimo. EN el caso de funciones que tengan varios mínimos locales lo que hará este algoritmo es buscar el mínimo local más cercano.
