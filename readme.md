@@ -39,6 +39,8 @@
     - [Clase 24. Ejemplos de derivadas parciales](#clase-24-ejemplos-de-derivadas-parciales)
     - [Clase 25. Regla de la cadena y su utilidad en cálculo multivariable](#clase-25-regla-de-la-cadena-y-su-utilidad-en-cálculo-multivariable)
     - [Clase 26. Subamos con el gradiente](#clase-26-subamos-con-el-gradiente)
+  - [Módulo 5. 📚 Proyecto: descenso del gradiente](#módulo-5--proyecto-descenso-del-gradiente)
+    - [Clase 27. ¿Qué es el descenso del gradiente?](#clase-27-qué-es-el-descenso-del-gradiente)
 
 ## 📚 Módulo 1. Introducción
 
@@ -926,3 +928,13 @@ Cabe resaltar el la forma del gradiente varia dependiendo las coordenadas que ut
 
 ![Gradiente 2](https://i.ibb.co/k5hRfZx/gradiente-2.webp)
 
+
+## Módulo 5. 📚 Proyecto: descenso del gradiente
+
+### Clase 27. ¿Qué es el descenso del gradiente?
+
+El descenso del gradiente permite optimizar una función, es decir, encontrar el mínimo de una función de coste. El descenso del gradiente se puede aplicar en diferentes mediciones, no obstante en este ejemplo para fines prácticos sólo se usarán 2.
+
+![Explicación descenso del gradiente](https://i.ibb.co/8cvPmh4/desc-gradiente-info.png)
+
+[Vídeo explicativo](https://www.youtube.com/watch?v=A6FiCDoz8_4)
