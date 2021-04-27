@@ -30,7 +30,7 @@
     - [Clase 19. Máximos y mínimos: subidas y bajadas en una montaña rusa](#clase-19-máximos-y-mínimos-subidas-y-bajadas-en-una-montaña-rusa)
       - [Formas de calcular los máximos y los mínimos](#formas-de-calcular-los-máximos-y-los-mínimos)
         - [Teorema de la primera derivada](#teorema-de-la-primera-derivada)
-        - [Teorema de las segunda derivada](#teorema-de-las-segunda-derivada)
+        - [Teorema de la segunda derivada](#teorema-de-la-segunda-derivada)
     - [Clase 20. ¿Cómo optimizar una función?](#clase-20-cómo-optimizar-una-función)
   - [📚 Módulo 4. Cálculo multivariable](#-módulo-4-cálculo-multivariable)
     - [Clase 21. Más dimensiones para tus funciones](#clase-21-más-dimensiones-para-tus-funciones)
@@ -738,15 +738,15 @@ Para el cambio en **y** se usaría:
 
 ![](https://i.ibb.co/xGXVKkn/UcEl3gp.png)
 
-A la división de estos dos incrementos la llamamos razón de cambio promedio de y con respecto a x.
+A la división de estos dos incrementos la llamamos razón de cambio promedio de $y$ con respecto a $x$.
 
 ![](https://i.ibb.co/RS9KKkw/z117ffz.png)
 
-Las razones de cambio nos dicen qué tanto cambia una cantidad y con respecto a $x$. Específicamente la razón de cambio promedio nos dice que tanto cambia y en un intervalo entre $x_1$ y $x_2$. Por lo que si queremos saber qué tanto cambia una función en un instante determinado debemos aplicar la razón de cambio instantánea que es la definición de la derivada.
+Las razones de cambio nos dicen qué tanto cambia una cantidad $y$ con respecto a $x$. Específicamente la razón de cambio promedio nos dice que tanto cambia y en un intervalo entre $x_1$ y $x_2$. Por lo que si queremos saber qué tanto cambia una función en un instante determinado debemos aplicar la razón de cambio instantánea que es la definición de la derivada.
 
 ![](https://i.ibb.co/Jrp3Yxz/yuhEZrR.png)
 
-Si nuestra derivada es muy grande significa que y crece muy rápido con respecto a x, pero si la derivada es muy pequeña o casi cero entonces el crecimiento de y respecto a x es mínimo.
+Si nuestra derivada es muy grande significa que $y$ crece muy rápido con respecto a $x$, pero si la derivada es muy pequeña o casi cero entonces el crecimiento de $y$ respecto a $x$ es mínimo.
 
 
 ### Clase 19. Máximos y mínimos: subidas y bajadas en una montaña rusa
@@ -761,17 +761,17 @@ Cuando la derivada sea mayor a cero la pendiente estará subiendo y cuando la de
 
 La función completa puede tener varios máximos y mínimos, así como un **máximo global**, que es el valor más alto, y un **mínimo global** que sería el valor más bajo.
 
-También se pueden analizar secciones específicas de una función en las que el valor más alto y más bajo se llamarían **máximo global** y **mínimo global** respectivamente.
+También se pueden analizar secciones específicas de una función en las que el valor más alto y más bajo se llamarían **máximo local** y **mínimo local** respectivamente.
 
 #### Formas de calcular los máximos y los mínimos
 ##### Teorema de la primera derivada
-- Si $f'(x)>0$ hacia la izquierda de un punto a y si $f'(x)<0$ hacia la derecha del punto $a$, entonces $f$ tiene un máximo relativo en $(a, f(a))$
+- Si $f'(x)>0$ hacia la izquierda de un punto $a$ y si $f'(x)<0$ hacia la derecha del punto $a$, entonces $f$ tiene un máximo relativo en $(a, f(a))$
   
-- Si $f'(x)<0$ hacia la izquierda de un punto a y si $f'(x)>0$ hacia la derecha del punto $a$, entonces tiene un minino relativo en $(a, f(a))$
+- Si $f'(x)<0$ hacia la izquierda de un punto $a$ y si $f'(x)>0$ hacia la derecha del punto $a$, entonces tiene un minino relativo en $(a, f(a))$
   
 - Si $f'(x)$ es menor o mayor de ambos lados, no es ni un máximo ni un mínimo
 
-##### Teorema de las segunda derivada
+##### Teorema de la segunda derivada
 - Si $f''(x)<0$ entonces $f$ tiene un máximo relativo en $(x, f(x))$
 
 - Si $f''(x)>0$ entonces $f$ tiene un mínimo relativo en $(x, f(x))$
@@ -791,7 +791,7 @@ Encontrar el tamaño de los muros que permita obtener la mayor área en m², o e
 
 Para *calcular el área* se usar la fórmula super conocida: $A=xy$
 
-Para *calcular el perímetro* hay que sumar cada lado. En este ejemplo el perímetro total son los 50 metros de muro que se pueden construir: $x+y+x=50=2x+y=5$
+Para *calcular el perímetro* hay que sumar cada lado. En este ejemplo el perímetro total son los 50 metros de muro que se pueden construir: $x+y+x=50=2x+y=50$
 
 A partir del punto anterior se puede despejar $y$:
 
@@ -801,7 +801,7 @@ Con esto ya se puede sustituir $y$ en la ecuación del área:
 
 $$A=x(50-2x)=50x-2x^2$$
 
-Ahora que ya se tiene el área expresada en función de $x$ se puede convertir esto en una función, es precisamente este función la que se va a optimizar.
+Ahora que ya se tiene el área expresada en función de $x$ se puede convertir esto en una función, es precisamente esta función la que se va a optimizar.
 
 $$A(x)=50x-2x^2$$
 
@@ -884,7 +884,7 @@ la regla de la cadena para una sola variable es sencilla relativamente pues su p
 
 La función $w=f(x,y)$ depende de dos variables, por lo que el cálculo de alguna derivada de esta función concretamente debe ser parcial. Pero tanto las variables $x$ y $y$ solo son respecto a una variable, la variable $t$, por lo que el cálculo de cualquier clase de derivada debe ser total.
 
-En el siguiente diagrama se explica cómo se reacionan estas variables desde $t$ hasta $w$:
+En el siguiente diagrama se explica cómo se relacionan estas variables desde $t$ hasta $w$:
 
 ![Diagrama 1](https://imgur.com/OgEfDgI.jpg)
 
@@ -919,12 +919,12 @@ _**Ejemplo:**_
 
 ![Ejemplo gradiente](https://i.ibb.co/NNZbqtp/ejemplo-gradiente.png)
 
-El gradiente almacena toda la información de la derivadas parciales de una función multivariable. Pero es más que un simple dispositivo de almacenamiento, tiene muchas aplicaciones en muchas área de las ciencias.
+El gradiente almacena toda la información de la derivadas parciales de una función multivariable. Pero es más que un simple dispositivo de almacenamiento, tiene muchas aplicaciones en muchas áreas de las ciencias.
 El gradiente es una función escalar multivariable que empaqueta toda la información de sus derivadas parciales en un vector.
 
 ![Gradiente 1](https://i.ibb.co/YBRHD13/gradiente-1.webp)
 
-Cabe resaltar el la forma del gradiente varia dependiendo las coordenadas que utilicemos, tiene las misma interpretación, pero se utiliza se escribe de destina manera.
+Cabe resaltar que la forma del gradiente varia dependiendo de las coordenadas que utilicemos, tiene las misma interpretación, pero se escribe de destina manera.
 
 ![Gradiente 2](https://i.ibb.co/k5hRfZx/gradiente-2.webp)
 
