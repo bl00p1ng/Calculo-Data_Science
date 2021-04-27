@@ -1,5 +1,7 @@
 # Curso de Matemáticas para Data Science: Cálculo Básico
 
+Lamentablemente GitHub no soporta la sintaxis que use para escribir ecuaciones matemáticas en Markdown, así que les dejo los [apuntes en Notion](https://www.notion.so/Curso-de-Matem-ticas-para-Data-Science-C-lculo-B-sico-ac37dee99fe94fa494b9a5986d6f0491) para que puedan visualizar las ecuaciones sin problema.
+
 - [Curso de Matemáticas para Data Science: Cálculo Básico](#curso-de-matemáticas-para-data-science-cálculo-básico)
   - [📚 Módulo 1. Introducción](#-módulo-1-introducción)
     - [Clase 2. Qué es el Cálculo](#clase-2-qué-es-el-cálculo)
